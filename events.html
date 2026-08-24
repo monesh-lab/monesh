@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events & Campaigns - Annai Foundation</title>
+  <meta name="description" content="Stay updated with Annai Foundation's upcoming charity events, community workshops, fundraisers, and our interactive event calendar.">
+  <link rel="stylesheet" href="css/style-v2.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header" id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link" id="logoLink">
+        <img src="asset/annai-logo-main - Copy.jpeg" alt="Annai Foundation Logo" class="logo-img">
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link" id="navHome">Home</a>
+        <a href="programs.html" class="nav-link" id="navPrograms">Programs</a>
+        <a href="impact.html" class="nav-link" id="navImpact">Impacts</a>
+        <a href="events.html" class="nav-link active" id="navEvents">Events</a>
+        <a href="volunteer.html" class="nav-link" id="navVolunteer">Volunteer</a>
+        <a href="contact.html" class="nav-link" id="navContact">Contact</a>
+        <a href="donate.html" class="btn btn-primary btn-sm btn-donate-header mobile-only" id="navDonateMobile">Donate</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="donate.html" class="btn btn-primary btn-sm btn-donate-header" id="navDonate">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          Donate
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero-banner" id="eventsHero">
+      <div class="container">
+        <h1>Upcoming Events & Campaigns</h1>
+        <p>Empowering rural communities through structured initiatives in healthcare, education, social welfare, and economic independence.</p>
+      </div>
+    </section>
+
+    <!-- Featured Event Section -->
+    <section class="event-featured-section" id="featuredCampaign">
+      <div class="container">
+        <div class="event-featured-banner" id="featuredEventBanner">
+          <img src="asset/event-featured.jpg" alt="Charity run participants marathon" class="event-featured-bg" id="featuredEventImg">
+          <div class="event-featured-overlay"></div>
+          <div class="event-featured-content" id="featuredEventContent">
+            <h2 id="featuredEventTitle">Annai Annual Charity Run & Community Fundraiser</h2>
+            <p id="featuredEventDesc">A 5K walk and run to spread awareness about child malnutrition and raise funds to secure school nutrition items.</p>
+            <button class="btn btn-primary" onclick="alert('Registration open! Complete the form details to secure your spot.');">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Calendar and Carousel Section -->
+    <section class="section" id="calendarSection">
+      <div class="container event-calendar-container">
+        <!-- Left: Calendar info and widget -->
+        <div class="calendar-card-left">
+          <h2>Event Calendar</h2>
+          <p>Stay updated with upcoming charity events, community activities, and important dates. Select a date to view event details and plan your participation.</p>
+          
+          <!-- Interactive Calendar Widget -->
+          <div class="calendar-widget">
+            <div class="calendar-month">August</div>
+            <div class="calendar-grid" id="calendarGrid">
+              <div class="calendar-day-label">m</div>
+              <div class="calendar-day-label">t</div>
+              <div class="calendar-day-label">w</div>
+              <div class="calendar-day-label">t</div>
+              <div class="calendar-day-label">f</div>
+              <div class="calendar-day-label">s</div>
+              <div class="calendar-day-label">s</div>
+
+              <!-- Day elements -->
+              <div class="calendar-day">01</div>
+              <div class="calendar-day event-active selected" data-date="02" title="Annual Charity Run">02</div>
+              <div class="calendar-day">03</div>
+              <div class="calendar-day">04</div>
+              <div class="calendar-day">05</div>
+              <div class="calendar-day">06</div>
+              <div class="calendar-day">07</div>
+
+              <div class="calendar-day event-active" data-date="08" title="School Study Kits Drive">08</div>
+              <div class="calendar-day">09</div>
+              <div class="calendar-day">10</div>
+              <div class="calendar-day">11</div>
+              <div class="calendar-day">12</div>
+              <div class="calendar-day">13</div>
+              <div class="calendar-day">14</div>
+
+              <div class="calendar-day event-active" data-date="15" title="Sewing Machine Gift Event">15</div>
+              <div class="calendar-day">16</div>
+              <div class="calendar-day">17</div>
+              <div class="calendar-day">18</div>
+              <div class="calendar-day">19</div>
+              <div class="calendar-day">20</div>
+              <div class="calendar-day">21</div>
+
+              <div class="calendar-day">22</div>
+              <div class="calendar-day">23</div>
+              <div class="calendar-day">24</div>
+              <div class="calendar-day">25</div>
+              <div class="calendar-day event-active" data-date="26" title="Coding Basics Workshop">26</div>
+              <div class="calendar-day">27</div>
+              <div class="calendar-day">28</div>
+
+              <div class="calendar-day">29</div>
+              <div class="calendar-day">30</div>
+              <div class="calendar-day event-active" data-date="31" title="Rural Health Camp">31</div>
+              <!-- Empty cells for padding next month -->
+              <div class="calendar-day empty">01</div>
+              <div class="calendar-day empty">02</div>
+              <div class="calendar-day empty">03</div>
+              <div class="calendar-day empty">04</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Event card carousel -->
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 24px; position: relative; min-width: 0;">
+          <h3 style="margin-bottom: 0;">Campaign List</h3>
+
+          <div class="event-carousel-wrapper">
+            <button class="carousel-btn prev" aria-label="Previous event">‹</button>
+            <div class="event-carousel" id="eventCarousel">
+              <!-- Card 1 -->
+              <div class="carousel-card active" id="event-run" data-date="02" data-img="asset/event-featured.jpg" data-title="Annai Annual Charity Run & Community Fundraiser" data-desc="A 5K walk and run to spread awareness about child malnutrition and raise funds to secure school nutrition items.">
+                <img src="asset/event-featured.jpg" alt="People running in marathon" class="carousel-card-img">
+                <div class="carousel-card-body">
+                  <h3>Annai Annual Charity Run & Community Fundraiser</h3>
+                  <p>A 5K walk and run to spread awareness about child malnutrition and raise funds to secure school nutrition items.</p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="carousel-card" id="event-coding" data-date="26" data-img="asset/sakthi_school_coding_workshop_3 - Copy.jpeg" data-title="Digital Literacy & Coding Basics Workshop" data-desc="A two-day introductory course teaching high school students standard office computing, internet applications, and basic coding constructs.">
+                <img src="asset/sakthi_school_coding_workshop_3 - Copy.jpeg" alt="Students in computer lab class" class="carousel-card-img">
+                <div class="carousel-card-body">
+                  <h3>Digital Literacy & Coding Basics Workshop</h3>
+                  <p>A two-day introductory course teaching high school students standard office computing, internet applications, and basic coding constructs.</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="carousel-card" id="event-health" data-date="31" data-img="asset/WhatsApp Image 2026-07-23 at 09.31.38 - Copy.jpeg" data-title="Rural Health & General Diagnostic Camp" data-desc="Providing free consultations, diabetic screenings, general diagnostics, and free prescription medications to village seniors.">
+                <img src="asset/WhatsApp Image 2026-07-23 at 09.31.38 - Copy.jpeg" alt="Seniors having eye exams in rural health camp" class="carousel-card-img">
+                <div class="carousel-card-body">
+                  <h3>Rural Health & General Diagnostic Camp</h3>
+                  <p>Providing free consultations, diabetic screenings, general diagnostics, and free prescription medications to village seniors.</p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="carousel-card" id="event-kits" data-date="08" data-img="asset/case-img-1 - Copy.jpg" data-title="Rural Primary School Study Kits Drive" data-desc="Distributing educational kits containing textbooks, notebooks, writing materials, and bags to over 300 primary school children.">
+                <img src="asset/case-img-1 - Copy.jpg" alt="Students sitting with new study kits" class="carousel-card-img">
+                <div class="carousel-card-body">
+                  <h3>Rural Primary School Study Kits Drive</h3>
+                  <p>Distributing educational kits containing textbooks, notebooks, writing materials, and bags to over 300 primary school children.</p>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="carousel-card" id="event-sewing" data-date="15" data-img="asset/a37b89723c - Copy.jpg" data-title="Livelihood Training Sewing Machine Gift Event" data-desc="Celebrating the graduation of our tailoring course. Distributing free industrial sewing machines and startup kits to 25 women graduates.">
+                <img src="asset/a37b89723c - Copy.jpg" alt="Women sitting around a sewing machine" class="carousel-card-img">
+                <div class="carousel-card-body">
+                  <h3>Livelihood Training Sewing Machine Gift Event</h3>
+                  <p>Celebrating the graduation of our tailoring course. Distributing free industrial sewing machines and startup kits to 25 women graduates.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Next event">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-logo-section">
+        <img src="asset/annai-logo-main - Copy.jpeg" alt="Annai Foundation Logo" class="footer-logo">
+        <p class="footer-description">Annai Foundation works with rural communities to create sustainable upliftment through focused healthcare, education, welfare, and empowerment initiatives.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="impact.html">Impact Stories</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="volunteer.html">Volunteer Portal</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Stay Connected</h4>
+        <p class="footer-newsletter-text">Subscribe to our newsletter to receive monthly updates on our campaigns, success stories, and upcoming events.</p>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+          <input type="email" placeholder="Your e-mail Address" class="newsletter-input" required id="newsletterEmail">
+          <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Annai Foundation. Reg.no.12612/23. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
